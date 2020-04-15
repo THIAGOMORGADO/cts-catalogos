@@ -1,0 +1,31 @@
+.App-form-fild{
+  border: none;
+  background: rgba(0, 0, 0, .25);
+  color: #fdfdfd;
+  margin-top: 1rem;
+  
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  transition: all .2s linear;
+}
+.App-form-fild:focus{
+  outline: none;
+  box-shadow: 0 4px 4px rgba(0,0,0, .5);
+}
+.App-form-error{
+  color: #ff8080;
+  
+}
+.App-btn{
+  background: #00cc99;
+  color: #fdfdfd;
+  padding: .5rem 2rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+.App-btn:hover{
+  cursor: pointer;
+}

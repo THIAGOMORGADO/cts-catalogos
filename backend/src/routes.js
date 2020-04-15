@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import multer from 'multer';
 import multerConfig from './config/multer';
+import cors from 'cors';
 
 import SessionController from './app/controllers/SessionController';
 import UserController from './app/controllers/UserController';
