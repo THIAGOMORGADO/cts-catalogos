@@ -5,6 +5,8 @@ import * as yup from 'yup';
 import {history } from '../../history'
 
 import api from '../../api/configaxios'
+import logo from './images/logo.png'
+
 
 import './login.css'
 
@@ -26,22 +28,29 @@ const login = () => {
   })
 return(
 
-  <div>
-      <h1>Login</h1>
-      <p>Acessar o painel</p>
+  <div className="App-form-area">
+    <div className="aFilhaQueEuTeFalei">
+    <div className="App-form-area-img">
+    <img src={logo}/>
+      <h2>BEM VINDO AO PAINEL ADMINISTRATIVO </h2>
+    </div>
       <Formik onSubmit={handleSubmit} initialValues={{}} validationSchema={validation}>
           <Form className="App-form-login">
             <div className="App-formp-group">
+            <label>E-mail:</label>
               <Field  name="email" className="App-form-fild"/>
               <ErrorMessage component="span" name="email" className="App-form-error"/>
             </div>
             <div className="App-formp-group">
-              <Field  name="password" className="App-form-fild"/>
+              <label>Senha:</label>
+              <Field  name="password" type="password" className="App-form-fild"/>
               <ErrorMessage component="span" name="password" className="App-form-error"/>
             </div>
+            <h3>Faça seu Login</h3>
             <button className="App-btn" type="submit">Login</button>
           </Form>
       </Formik>
+    </div>
     </div>
   )
 }

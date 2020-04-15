@@ -1,26 +1,78 @@
+.App-form-area{
+  background: #c6d1c8;
+  border-radius: 10px;
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+.App-form-area {
+  display: flex;
+}
+.App-form-area img{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 50px;
+  
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.App-form-area h2 {
+  color: #000;
+  display: flexbox;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: #000 solid 1px;
+  padding-bottom: 30px;
+}
+.App-form-area p {
+  color: #000;
+  display: flexbox;
+  text-align: center;
+  
+}
 .App-form-fild{
   border: none;
   background: rgba(0, 0, 0, .25);
   color: #fdfdfd;
   margin-top: 1rem;
-  
-  width: 100%;
+  margin-bottom: 5px;
+  display: flex;
+  width: 90%;
   padding: 1rem;
   font-size: 1.2rem;
   border-radius: 7px;
   transition: all .2s linear;
+  display: flexbox;
+}
+.App-formp-group label {
+  color: #000;
+  font-weight: bolder;
 }
 .App-form-fild:focus{
   outline: none;
   box-shadow: 0 4px 4px rgba(0,0,0, .5);
 }
 .App-form-error{
-  color: #ff8080;
+  color: #ff0000;
   
 }
+.App-form-login h3{
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+}
 .App-btn{
-  background: #00cc99;
+  background: #000;
   color: #fdfdfd;
+  flex-direction: row;
+  align-content: center;
   padding: .5rem 2rem;
   border: none;
   border-radius: 5px;

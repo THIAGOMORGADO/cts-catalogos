@@ -1,12 +1,16 @@
+#root{
+  min-width: 100vw;
+  min-height: 100vh;
+}
 .App{
-  margin:0 auto;
-  width: 480px;
+  min-width: 100vw;
+    min-height: 100vh;
 }
 .App-form{
     
 }
 body{
   font-family: Arial, Helvetica, sans-serif;
-  background: #7159c1;
+  background: #c6d1c8;
   color: #fdfdff;
 }
