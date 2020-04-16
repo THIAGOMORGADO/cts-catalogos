@@ -6,7 +6,7 @@
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-
+  flex-wrap: wrap;
   
 }
 .App-form-area {
@@ -16,9 +16,9 @@
   width: 100px;
   height: 100px;
   margin-bottom: 50px;
-  
   justify-content: center;
   align-items: center;
+  
   flex-wrap: wrap;
   
 }
