@@ -10,7 +10,7 @@ import logo from './images/logo.png'
 
 import './login.css'
 
-const login = () => {
+const login = (props) => {
   const handleSubmit = values => {
    api.post('/sessions', values)
     .then(resp => {
@@ -31,7 +31,7 @@ return(
   <div className="App-form-area">
     <div className="aFilhaQueEuTeFalei">
     <div className="App-form-area-img">
-    <img src={logo}/>
+    <img src={logo} alt="Cts-Catalogos"/>
       <h2>BEM VINDO AO PAINEL ADMINISTRATIVO </h2>
     </div>
       <Formik onSubmit={handleSubmit} initialValues={{}} validationSchema={validation}>
@@ -46,7 +46,7 @@ return(
               <Field  name="password" type="password" className="App-form-fild"/>
               <ErrorMessage component="span" name="password" className="App-form-error"/>
             </div>
-            <h3>Faça seu Login</h3>
+            <h3>Faça seu <strong>Login</strong></h3>
             <button className="App-btn" type="submit">Login</button>
           </Form>
       </Formik>

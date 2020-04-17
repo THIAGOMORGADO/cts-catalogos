@@ -1,10 +1,11 @@
 import React from 'react';
 
-import '../src/containers/index.css';
+import './global.css'
+
 import Routes from '../src/routes'
 
 const App = () => (
-  <main className="App">
+  <main>
       <Routes /> 
   </main>
 );
